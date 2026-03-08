@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @StepScope
 public class ImpimirOlaTasketAula18 implements Tasklet{
 

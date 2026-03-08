@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-@Configuration
+//@Configuration
 public class StepOlaMundoConfig {
 
     @Bean
