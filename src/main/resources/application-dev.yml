@@ -15,8 +15,8 @@ spring:
       enabled: true
     jdbc:
       initialize-schema: always
-logging:
-  level:
-    root: INFO
-    org.springframework.batch: DEBUG
-    org.springframework.jdbc: DEBUG
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.batch: DEBUG
+#    org.springframework.jdbc: DEBUG
