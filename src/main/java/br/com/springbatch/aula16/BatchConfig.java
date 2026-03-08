@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-@Configuration
+//@Configuration
 public class BatchConfig {
 
     @Bean
@@ -41,7 +41,7 @@ public class BatchConfig {
                              PlatformTransactionManager transactionManager) {
 
         return new StepBuilder("imprimirParImparStep", jobRepository)
-                .<Integer, String>chunk(1, transactionManager)
+                .<Integer, String>chunk(10, transactionManager)
                 .reader(contaAteDezReader())
                 .processor(parOuImparProcessor())
                 .writer(imprimirWrite())
