@@ -19,7 +19,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.transaction.PlatformTransactionManager;
 
 
-@Configuration
+//@Configuration
 public class BatchConfig {
 
     @Bean
