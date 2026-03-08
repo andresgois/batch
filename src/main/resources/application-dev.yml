@@ -1,10 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/workbatch_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    jdbcUrl: jdbc:mysql://localhost:3306/workbatch_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -15,6 +14,13 @@ spring:
       enabled: true
     jdbc:
       initialize-schema: always
+app:
+  application:
+    name: app
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/app?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    password: 123456
+    username: root
 #logging:
 #  level:
 #    root: INFO
